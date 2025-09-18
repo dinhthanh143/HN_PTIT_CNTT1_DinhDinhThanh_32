@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.todo-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 600px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.todo-header input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item label {
+  flex: 1;
+}
+
+.tag {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.tag.urgent { background: #f44336; color: #fff; }
+.tag.important { background: #ff9800; color: #fff; }
+.tag.normal { background: #2196f3; color: #fff; }
+.tag.not-important { background: #555; color: #fff; }
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.add { background: #007bff; color: #fff; }
+.btn.edit { background: #ffe0b2; }
+.btn.delete { background: #ffcdd2; }
+.btn.complete { background: #007bff; color: #fff; }
+.btn.delete-all { background: #f44336; color: #fff; }
+.btn.add-full { background: #007bff; color: #fff; width: 100%; margin-top: 10px; }
+
+.todo-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Modal */
+.modal {
+  display: block; /* cho demo luôn hiện */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-header .close {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.priority-group {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}

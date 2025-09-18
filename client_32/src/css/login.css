@@ -1,0 +1,40 @@
+.form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.button {
+  padding: 10px;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1669c1;
+}
