@@ -60,7 +60,7 @@ const todoReducer = (state: Todo[] = initTodos, action: TodoAction) => {
     case "ADD_TASK":
       return [...state, action.payload];
     case "FIX_TASK":
-      if (action.payload.id === 1) {
+      if (action.payload.id === -1) {
         return state;
       }
       return state.map((t) =>
