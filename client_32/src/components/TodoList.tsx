@@ -154,7 +154,12 @@ export const TodoList = () => {
       priority: -1,
       isCompleted: false,
     });
-  }, [todos]);
+    setFixTask({
+       id: -1,
+    title: "",
+    priority: -1,
+    })
+  }, [todos,fixTask]);
   return (
     <div className="todo-container">
       <h2 className="title">Danh sách công việc</h2>
